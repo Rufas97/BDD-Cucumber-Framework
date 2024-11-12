@@ -22,15 +22,15 @@ public class LoginStepDefinition extends PageLogin
 		
 	}
 	
-	@When("^user enters valid  username\"([^\"]*)\"$")
-	public void user_enters_valid_username(String emailid) throws IOException
+	@When("^user enters valid  username \"([^\"]*)\"$")
+	public void user_enters_valid_username (String emailid) throws IOException
 	{
 		Enter_Emailid(emailid);
 		ExtentCucumberAdapter.addTestStepLog("User entered the email" +emailid);
 		ExtentCucumberAdapter.addTestStepScreenCaptureFromPath(GenericMethods.captureScreenShot());
 	}
-	@When("^user enters valid password\"([^\"]*)\"$")
-	public void user_enters_valid_password(String pass) throws IOException {
+	@When("^user enters valid password \"([^\"]*)\"$")
+	public void user_enters_valid_password (String pass) throws IOException {
 		Enter_password(pass);
 		ExtentCucumberAdapter.addTestStepLog("User entered the password" +pass);
 		ExtentCucumberAdapter.addTestStepScreenCaptureFromPath(GenericMethods.captureScreenShot());

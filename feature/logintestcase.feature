@@ -9,13 +9,13 @@ Feature: login feature
  @regression @smoke
   Scenario Outline: login with multiple user
                              Given user is on login page
-                             When user enters valid  username"<user name>"
-                             And user enters valid password"<password>"
+                             When user enters valid  username "<username>"
+                             And user enters valid password "<password>"
                              Then clicks on submit button
   
   
-           Examples: 
-           |username|password|
+           Examples:
+                           |username|password|
                            |Testing@gmail.com|p1234|
                            |Naresh@gmail.com|Test@1234|
                         

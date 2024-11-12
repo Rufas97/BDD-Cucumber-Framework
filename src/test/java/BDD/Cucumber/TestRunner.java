@@ -7,7 +7,7 @@ import io.cucumber.testng.CucumberOptions;
 
 @CucumberOptions(features = {"feature"},
                  glue =     {"StepDefinitionspackage"},
-                 plugin =    { "pretty",
+                 plugin =    { "pretty","html:target/cucumber-reports",
     		     "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"},
                  //tags="@login",
                   monochrome = true )
